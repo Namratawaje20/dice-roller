@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Roller</title>
     <style>
-
+        /* Inline CSS */
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: linear-gradient(45deg, #ff6f61, #ff8e53); 
+            background: linear-gradient(45deg, #ff6f61, #ff8e53); /* Gradient background */
             margin: 0;
             font-family: 'Arial', sans-serif;
         }
@@ -21,14 +21,14 @@
             padding: 40px;
             border-radius: 15px;
             background-color: #ffffff;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect */
             max-width: 350px;
             width: 100%;
             transition: transform 0.3s ease-in-out;
         }
 
         .container:hover {
-            transform: scale(1.05); 
+            transform: scale(1.05); /* Scale effect on hover */
         }
 
         h1 {
@@ -47,7 +47,7 @@
         }
 
         .dice img:hover {
-            transform: rotate(15deg); 
+            transform: rotate(15deg); /* Dice rotation effect on hover */
         }
 
         button {
@@ -63,10 +63,10 @@
 
         button:hover {
             background-color: #0056b3;
-            transform: translateY(-5px);
+            transform: translateY(-5px); /* Button lift effect on hover */
         }
 
-        
+        /* Mobile responsiveness */
         @media (max-width: 600px) {
             .dice img {
                 width: 100px;
@@ -79,7 +79,6 @@
             }
         }
     </style>
-
 </head>
 <body>
     <div class="container">
@@ -91,13 +90,11 @@
     </div>
 
     <script>
-
+        // JavaScript for rolling a single dice
         function rollDice() {
             const diceNumber = Math.floor(Math.random() * 6) + 1;
             document.getElementById('diceImage').src = `dice${diceNumber}.jpg`;
         }
     </script>
-
-
 </body>
 </html>
